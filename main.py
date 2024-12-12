@@ -3,11 +3,11 @@ import requests
 import os
 from twilio.rest import Client
 
-MY_OPEN_WEATHER_API_KEY = os.environ["My Open Weather Map API key"]
+MY_OPEN_WEATHER_API_KEY = os.getenv["My Open Weather Map API key"]
 OPEN_WEATHER_END_POINT = "https://api.openweathermap.org/data/2.5/forecast"
 
-ACCOUNT_SID = os.environ["My Twilio Account Sid"]
-AUTH_TOKEN = os.environ["My Twilio Authorization Token"]
+ACCOUNT_SID = os.getenv["My Twilio Account Sid"]
+AUTH_TOKEN = os.getenv["My Twilio Authorization Token"]
 
 MY_ADDRESS = "Some address"
 
